@@ -272,7 +272,13 @@
             <artifactId>json-simple</artifactId>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-17-112-releases</name>
+        <url>http://18.217.130.54:8081/artifactory/libs-release-local</url>
+    </repository>
+</distributionManagement>
     <!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
     <build>
         <defaultGoal>install</defaultGoal>
